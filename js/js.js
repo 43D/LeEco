@@ -13,8 +13,8 @@ $('#close5').click(function() { $('#conteudo5').removeClass('show').addClass('hi
 
 //Json
 var json = {};
-$.getJSON("/LeEco/json/leMax2.json", function(jso) { //https://raw.githubusercontent.com/43D/Web/master
-    json = jso;
+$.getJSON("./json/leMax2.json", function(data) {
+    json = data;
     main(json);
     $('#option').removeAttr("disabled");
 });
@@ -190,35 +190,3 @@ function showCard(id) {
             break;
     }
 }
-/*
-for (let i = 0; i < json.result[1].govenador.length; i++) {
-    let soma = json.result[1].govenador[i].antutu[0].cpu + json.result[1].govenador[i].antutu[0].gpu + json.result[1].govenador[i].antutu[0].mem + json.result[1].govenador[i].antutu[0].ux;
-    if (soma == json.result[1].govenador[i].antutu[0].score)
-        console.log(json.result[1].govenador[i].antutu[0].score);
-    else
-        console.log("não");
-}
-*/
-/*
-for (let i = 0; i < json.result[1].govenador.length; i++) {
-    var soma = json.result[1].govenador[i].antutu[0].cpuScore[0].mat;
-    soma += json.result[1].govenador[i].antutu[0].cpuScore[0].com;
-    soma += json.result[1].govenador[i].antutu[0].cpuScore[0].multi;
-    soma += json.result[1].govenador[i].antutu[0].gpuScore[0].marooned;
-    soma += json.result[1].govenador[i].antutu[0].gpuScore[0].coastline;
-    soma += json.result[1].govenador[i].antutu[0].gpuScore[0].refinery;
-    soma += json.result[1].govenador[i].antutu[0].memScore[0].ram;
-    soma += json.result[1].govenador[i].antutu[0].memScore[0].rom;
-    soma += json.result[1].govenador[i].antutu[0].memScore[0].sequencialRead;
-    soma += json.result[1].govenador[i].antutu[0].memScore[0].sequencialWrite;
-    soma += json.result[1].govenador[i].antutu[0].memScore[0].random;
-    soma += json.result[1].govenador[i].antutu[0].uxScore[0].security;
-    soma += json.result[1].govenador[i].antutu[0].uxScore[0].process;
-    soma += json.result[1].govenador[i].antutu[0].uxScore[0].picture
-    soma += json.result[1].govenador[i].antutu[0].uxScore[0].user;
-    if (soma == json.result[1].govenador[i].antutu[0].score)
-        console.log(json.result[1].govenador[i].antutu[0].score);
-    else
-        console.log("não");
-}
-*/

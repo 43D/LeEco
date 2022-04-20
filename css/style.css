@@ -1,0 +1,51 @@
+.neg {
+    font-weight: bold;
+}
+
+.nom {
+    font-weight: normal;
+}
+
+#photo {
+    height: auto;
+    width: 16vw;
+}
+
+select {
+    text-align-last: center;
+}
+
+#conteudo1.show {
+    display: block;
+}
+
+#conteudo1.hide,
+#conteudo2.hide,
+#conteudo3.hide,
+#conteudo4.hide,
+#conteudo5.hide {
+    display: none;
+}
+
+#conteudo2.show,
+#conteudo3.show,
+#conteudo4.show,
+#conteudo5.show {
+    display: block;
+    height: auto;
+    padding-left: 8.333333%;
+    padding-right: 8.333333%;
+}
+
+.bottomInf {
+    height: auto;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.smallX {
+    height: 25px;
+}
+
+.shadow-custom {
+    box-shadow: 1rem 2rem 7rem rgba(0, 0, 0, .175)!important;
+}
